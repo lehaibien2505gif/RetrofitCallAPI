@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClickedItem"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/img_select" />
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_id_select"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:text="ID" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ngayThang_select"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="NGAY THANG" />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_noiDung_select"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="NOI DUNG" />
+
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="5dp"
+    android:padding="2dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/img_item"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="2dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_gravity="center">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvId_item"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Id"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvngayThang_item"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Ngay thang"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvnoiDung_item"-->
+<!--                android:padding="5dp"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Noi dung"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="18dp" />-->
+
+<!--        </LinearLayout>-->
+    </androidx.cardview.widget.CardView>
