@@ -16,21 +16,27 @@
         android:theme="@style/Theme.RetrofitCallAPI"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
         <activity
             android:name=".uploadAPI.MainUpLoad"
-            android:exported="false" />
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
         <activity
             android:name=".ClickedItem"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-    </application>
 
+    </application>
 </manifest>
