@@ -7,7 +7,6 @@ public class ImagesResponse implements Serializable {
     private String ngayThang;
     private String noiDung;
     private String linkAnh;
-    private String __v;
 
     public String get_id() {
         return _id;
@@ -39,13 +38,5 @@ public class ImagesResponse implements Serializable {
 
     public void setLinkAnh(String linkAnh) {
         this.linkAnh = linkAnh;
-    }
-
-    public String get__v() {
-        return __v;
-    }
-
-    public void set__v(String __v) {
-        this.__v = __v;
     }
 }

@@ -28,7 +28,6 @@ public interface ApiService {
     @Multipart
     @POST("imagees")
     Call<ImagesResponse> callImgRes(
-//            @Part(Const.KEY_ID) RequestBody _id,
             @Part(Const.KEY_NGAYTHANG) RequestBody ngayThang,
             @Part(Const.KEY_NOIDUNG) RequestBody noiDung,
             @Part(Const.KEY_LINKANH) RequestBody linkAnh);

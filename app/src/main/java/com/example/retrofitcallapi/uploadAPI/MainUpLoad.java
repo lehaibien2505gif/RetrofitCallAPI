@@ -51,17 +51,15 @@ public class MainUpLoad extends AppCompatActivity {
 
         progressDialog.show();
 
-        String str_id = txtUL_id.getText().toString().trim();
         String strnoiDung = txtUL_noiDung.getText().toString().trim();
         String strngayThang = txtUL_ngayThang.getText().toString().trim();
         String strlinkAnh = txtUL_linkAnh.getText().toString().trim();
 
-        RequestBody requestBody_id = RequestBody.create(MediaType.parse("multipart/form-data"), str_id);
         RequestBody requestBody_ngayThang = RequestBody.create(MediaType.parse("multipart/form-data"), strngayThang);
         RequestBody requestBody_noiDung = RequestBody.create(MediaType.parse("multipart/form-data"), strnoiDung);
         RequestBody requestBody_linkAnh = RequestBody.create(MediaType.parse("multipart/form-data"), strlinkAnh);
 
-        ApiService.apiService.callImgRes( requestBody_ngayThang, requestBody_noiDung, requestBody_linkAnh).enqueue(new Callback<ImagesResponse>() {
+        ApiService.apiService.callImgRes(requestBody_ngayThang, requestBody_noiDung, requestBody_linkAnh).enqueue(new Callback<ImagesResponse>() {
             @Override
             public void onResponse(Call<ImagesResponse> call, Response<ImagesResponse> response) {
                 progressDialog.dismiss();
